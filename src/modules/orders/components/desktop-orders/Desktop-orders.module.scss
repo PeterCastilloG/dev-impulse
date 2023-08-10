@@ -1,0 +1,32 @@
+.table {
+  width: 100%;
+  color: white;
+  font-style: normal;
+  table-layout: auto;
+  border-spacing: 0px;
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+  tr {
+    td {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      text-align: start;
+      height: 50px;
+      padding-right: 20px;
+    }
+    th {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      text-align: start;
+      border-bottom: solid 1px #a0aec0;
+      height: 50px;
+      &:last-child {
+        text-align: center;
+        width: 0rem;
+      }
+    }
+  }
+}

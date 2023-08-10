@@ -1,0 +1,40 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border-radius: 15px;
+  color: white;
+  .title {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    white-space: normal;
+    width: 100%;
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .content {
+    letter-spacing: 0em;
+    text-align: left;
+    background: linear-gradient(309.58deg, #0075ff -16.12%, #062b63 91.42%);
+    padding: 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    span {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}

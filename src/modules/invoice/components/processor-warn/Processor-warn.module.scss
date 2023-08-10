@@ -1,0 +1,42 @@
+.warn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: #fff6da;
+  color: black;
+  padding: 15px;
+  max-height: 20rem;
+  transition: all 150ms ease-in-out;
+  &.noshow {
+    max-height: 0rem;
+    overflow: hidden;
+    transition: all 150ms ease-in-out;
+    padding: 0px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+    svg {
+      color: rgb(228, 190, 50);
+      &:last-child {
+        color: black;
+        margin-left: auto;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

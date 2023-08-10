@@ -1,0 +1,113 @@
+.procesor {
+  flex-grow: 1;
+  background: linear-gradient(
+    127.09deg,
+    rgba(6, 11, 40, 0.94) 19.41%,
+    rgba(10, 14, 35, 0.49) 76.65%
+  );
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 20px;
+  span {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    background: #1e244b;
+    width: auto;
+    padding: 5px 8px;
+    align-self: flex-start;
+    border-radius: 8px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      background-color: transparent;
+      border-radius: 12px;
+      border: none;
+      svg {
+        background-color: #007cff;
+        color: white;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+    }
+    img {
+      width: 150px;
+      height: 50px;
+      object-fit: contain;
+    }
+  }
+}
+.modal {
+  background: rgba(0, 0, 0, 0.32);
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(
+      144.95deg,
+      #112044 5.46%,
+      rgba(10, 14, 35, 0.49) 106.64%
+    );
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    .close {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+    img {
+      object-fit: contain;
+      width: 200px;
+    }
+    .title {
+      font-weight: 700;
+    }
+    div {
+      display: flex;
+      gap: 0.3rem;
+      span {
+        font-size: 14px;
+        &:nth-child(2) {
+          font-weight: 600;
+        }
+      }
+    }
+    button, a {
+      color: white;
+      padding: 10px;
+      border-radius: 12px;
+      border: none;
+      font-weight: 700;
+      font-size: 12px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .go {
+      background-color: #fed42a;
+    }
+    .verify {
+      background-color: #007cff;
+    }
+  }
+}

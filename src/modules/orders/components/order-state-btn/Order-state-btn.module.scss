@@ -1,0 +1,53 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  button {
+    background-color: transparent;
+    color: white;
+  }
+  svg {
+    height: 100%;
+    font-size: 1.25rem;
+  }
+  span {
+    margin-top: 2.5px;
+  }
+  &.pay {
+    background: #01b5741f;
+    svg,
+    span {
+      color: #01b574;
+    }
+  }
+  &.verify {
+    background: #ffb54726;
+    svg,
+    span {
+      color: #ffb547;
+    }
+  }
+}
+
+.credentials {
+  display: flex;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    gap: 0.3rem;
+    span {
+      text-decoration: underline;
+    }
+  }
+}

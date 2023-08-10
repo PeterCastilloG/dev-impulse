@@ -1,0 +1,42 @@
+.btn {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  &.noshow {
+    justify-content: center;
+    span {
+      display: none;
+    }
+  }
+  svg {
+    height: 100%;
+    font-size: 1.25rem;
+  }
+  span {
+    margin-top: 2.5px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  &.created {
+    svg,
+    span {
+      color: #ffb547;
+    }
+  }
+  &.pay {
+    svg,
+    span {
+      color: #01b574;
+    }
+  }
+  &.pending {
+    svg,
+    span {
+      color: #ff5757;
+    }
+  }
+}

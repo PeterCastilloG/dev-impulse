@@ -1,0 +1,53 @@
+.details {
+  display: flex;
+  gap: 5rem;
+  @media screen and (max-width: 1000px) {
+    gap: 0;
+    flex-direction: column;
+  }
+  .colum {
+    flex-grow: 1;
+    .field {
+      display: flex;
+      flex-direction: column;
+      height: 61px;
+      .finalborder {
+        display: flex;
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+      &.variant {
+        font-size: 18px;
+        background: linear-gradient(
+          170deg,
+          #007cff 0%,
+          #0150bb 33.14%,
+          rgba(6, 11, 40, 0.47) 83.1%
+        );
+        border-radius: 15px;
+        .data {
+          span {
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            border-radius: 15px;
+          }
+        }
+      }
+      .data {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding: 0px 30px;
+        justify-content: space-between;
+        span {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+      }
+    }
+  }
+}

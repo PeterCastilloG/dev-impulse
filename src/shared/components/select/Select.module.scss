@@ -1,0 +1,8 @@
+.noelemnts {
+    li {
+        &:hover {
+            background-color: unset !important;
+            cursor: default;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &.disabled {
+    svg {
+      color: #828596;
+    }
+    input, select {
+      pointer-events: none;
+    }
+  }
+  label {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  div {
+    width: 100%;
+    position: relative;
+    input,
+    select {
+      height: 40px;
+      padding-left: 16px;
+      width: 100%;
+      border-radius: 15px;
+      border: 0.5px solid rgba(226, 232, 240, 0.3);
+      background: #0f1535;
+      outline: none;
+      color: white;
+      appearance: none;
+      -webkit-appearance: none; 
+      -moz-appearance: none; 
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.48);
+        font-family: unset;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      width: 40px;
+      height: 100%;
+      padding: 7.5px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

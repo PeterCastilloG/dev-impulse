@@ -1,0 +1,22 @@
+.principalPhoto {
+    border-radius: 50%;
+    background: greenyellow;
+    width: 200px;
+    height: 200px;
+    background: #0F1535;
+    margin: 10px 0;
+    border: 2px solid rgba(0, 117, 255, 0.42);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerInitial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}

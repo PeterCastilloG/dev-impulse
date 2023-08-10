@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+  .props {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: solid 1px white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    height: 50px;
+    span {
+      &:nth-child(1) {
+        width: 70px;
+      }
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+  }
+  .challengeorder {
+    display: flex;
+    flex-direction: column;
+    .propsorder {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      color: white;
+      cursor: pointer;
+      height: 50px;
+      span {
+        &:nth-child(1) {
+          display: flex;
+          width: 70px;
+        }
+        &:nth-child(2) {
+          flex-grow: 1;
+        }
+        &:nth-child(3) {
+          width: 60px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          gap: 0.3rem;
+          .drop {
+            color: white;
+            font-size: 1.2rem;
+          }
+          span {
+            width: auto;
+          }
+        }
+      }
+    }
+    .details {
+      color: white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      max-height: 0rem;
+      overflow: hidden;
+      transition: all 150ms;
+      &.show{
+        transition: all 150ms;
+        max-height: 50rem;
+      }
+      .extra {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        div {
+          display: flex;
+          span {
+            &:nth-child(1) {
+              display: flex;
+              width: 75px;
+            }
+          }
+        }
+      }
+      .btn {
+        padding: 10px 0px;
+        width: 100%;
+        border-bottom: solid 1px white;
+        align-self: center;
+        display: flex;
+        justify-content: flex-start;
+        button {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

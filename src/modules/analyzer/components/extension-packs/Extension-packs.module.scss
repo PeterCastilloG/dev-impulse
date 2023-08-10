@@ -1,0 +1,63 @@
+.extensiondays {
+  width: calc(50%);
+  max-width: 358px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 68px;
+  color: white;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(
+    118.36deg,
+    rgba(6, 11, 40, 0.92) -3.34%,
+    rgba(6, 43, 99, 0.49) 124.41%
+  );
+  @media screen and (max-width: 1400px) {
+    max-width: 100%;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+    svg {
+      height: 100%;
+      width: 100%;
+      color: #a0aec0;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: #a0aec0;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      a {
+        text-decoration: underline;
+      }
+    }
+    .btns {
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+      div {
+        font-size: 10px;
+        font-style: normal;
+        cursor: pointer;
+        color: #a0aec0;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

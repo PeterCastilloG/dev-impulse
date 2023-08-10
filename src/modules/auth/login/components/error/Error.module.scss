@@ -1,0 +1,65 @@
+.faild {
+  display: flex;
+  justify-content: center;
+  max-height: 707px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  // border: solid 1px white;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0px 15%;
+  color: white;
+  align-items: center;
+  @media screen and (max-height: 700px) {
+    padding: 4rem;
+  }
+  @media screen and (max-width: 1220px) {
+    padding: 4rem;
+    height: 600px;
+  }
+  .erroicon {
+    font-size: 3rem;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+  }
+  button {
+    background: #007cff;
+    border-radius: 12px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 200px;
+    width: 100%;
+    justify-content: center;
+    height: 44px;
+    svg {
+      font-size: 1rem;
+    }
+  }
+}

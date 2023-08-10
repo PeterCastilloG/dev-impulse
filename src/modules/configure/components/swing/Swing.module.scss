@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  &.hidden {
+    display: none;
+  }
+  &.noable {
+    .line {
+      background-color: #007bff56;
+      .point {
+        border-color: #007bff5d;
+        background: rgba(0, 26, 61);
+      }
+    }
+    .swing {
+      .label {
+        opacity: 0.25;
+      }
+      .btns {
+        height: 0rem;
+        overflow: hidden;
+      }
+    }
+  }
+  .line {
+    flex-shrink: 0;
+    width: 2px;
+    height: 0.5rem;
+    background-color: #007cff;
+    position: absolute;
+    left: -7.5px;
+    top: 3.5px;
+    .point {
+      position: absolute;
+      left: -4px;
+      top: 5px;
+      border-radius: 50%;
+      display: flex;
+      width: 10px;
+      height: 10px;
+      background: #007cff;
+      border: solid 2px #007cff;
+      &.select {
+        background-color: #007cff;
+      }
+    }
+  }
+  .swing {
+    .label {
+      color: #a0aec0;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    .btns {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      button {
+        width: 106px;
+        height: 32px;
+        color: white;
+        border: none;
+        background-color: #56577a;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        border-radius: 10px;
+        cursor: pointer;
+        &.selected {
+          background-color: #007CFF;
+        }
+      }
+    }
+  }
+}

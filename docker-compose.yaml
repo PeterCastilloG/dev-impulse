@@ -1,0 +1,31 @@
+version: '2.1'
+
+volumes:
+  files-datavolume-app:
+
+networks:
+  gcp_network:
+    name: ${DOCKER_NETWORK}
+    driver: bridge
+    external: true
+
+services:
+  app.fe.customer:
+    labels:
+      svc: "app-fe-customer"
+    restart: always
+    container_name: app.fe.customer
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      APP_PORT: ${APP_PORT}
+      MNEXTAUTH_URL: ${MNEXTAUTH_URL}
+      NEXTAUTH_SECRET: ${NEXTAUTH_SECRET}
+      APP_TRADER_BFF: ${APP_TRADER_BFF}
+    volumes:
+      - files-datavolume-app:/app/files
+    ports:
+      - ${APP_PORT}
+    networks:
+      - gcp_network

@@ -1,0 +1,210 @@
+.container {
+  flex-grow: 1;
+  color: white;
+  .secctiontitle {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .rulesdesktop {
+    width: 100%;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    .table {
+      height: 401px;
+      background: linear-gradient(
+        131.58deg,
+        rgba(6, 11, 40, 0.74) 12.6%,
+        rgba(6, 43, 99, 0.71) 85.05%
+      );
+      width: 100%;
+      border-radius: 15px;
+      padding: 20px;
+      table-layout: auto;
+      border-spacing: 0px;
+      td,
+      th {
+        text-align: center;
+        border-bottom: solid 1px #a0aec0;
+        padding: 20px 0px;
+        &:nth-child(1) {
+          text-align: start;
+          padding-left: 20px;
+        }
+      }
+      th {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0em;
+      }
+      tr {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        td {
+          .value {
+            display: flex;
+            align-items: center;
+            span {
+              display: flex;
+              gap: 0.3rem;
+              svg {
+                margin-top: 1px;
+              }
+            }
+            .extrainfo {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 1rem;
+              height: 100%;
+              display: flex;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              cursor: pointer;
+              position: relative;
+              p {
+                transition: 150ms all ease-in-out;
+                padding: 10px;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                position: absolute;
+                display: none;
+                background-color: #061234e3;
+                border-radius: 15px;
+                width: 200px;
+                top: 2rem;
+                z-index: 5;
+              }
+              &:hover {
+                p {
+                  transition: 150ms all ease-in-out;
+                  display: flex;
+                }
+              }
+              svg {
+                margin: auto;
+                color: #718096;
+              }
+            }
+          }
+          div {
+            justify-content: center;
+          }
+          &:first-child {
+            div {
+              justify-content: flex-start;
+            }
+          }
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .rulesmobile {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+    background: linear-gradient(
+      131.58deg,
+      rgba(6, 11, 40, 0.74) 12.6%,
+      rgba(6, 43, 99, 0.71) 85.05%
+    );
+    border-radius: 15px;
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+    .cart {
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      gap: 0.5rem;
+      padding: 0px 15px;
+      padding-top: 15px;
+      .title {
+        display: flex;
+        align-items: center;
+        .propertie {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 140%;
+          svg {
+            width: 18px;
+            color: #718096;
+            padding-top: 5px;
+          }
+        }
+        .extrainfo {
+          display: inline;
+          height: 100%;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          cursor: pointer;
+          position: relative;
+          p {
+            transition: 150ms all ease-in-out;
+            padding: 10px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            position: absolute;
+            display: none;
+            background-color: #061234e3;
+            border-radius: 15px;
+            width: 200px;
+            top: 2rem;
+            left: -100px;
+          }
+          &:hover {
+            p {
+              transition: 150ms all ease-in-out;
+              display: flex;
+              z-index: 5;
+            }
+          }
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        .info {
+          display: flex;
+          gap: 0.5rem;
+          span {
+            flex-grow: 1;
+            flex-basis: 0;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+          .value {
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+          }
+          margin-bottom: 15px;
+        }
+        svg {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

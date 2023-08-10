@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  padding-bottom: 1rem;
+  &.no_swing {
+    .line {
+      height: 0.5rem;
+    }
+  }
+  &.noable {
+    .line {
+      .point {
+        border-color: #007bff5d;
+        background: rgba(0, 26, 61);
+      }
+    }
+    .challenge {
+      gap: 0rem;
+      .label {
+        opacity: 0.25;
+      }
+      .range {
+        max-height: 0rem;
+        overflow: hidden;
+        padding: 0px;
+        transition: all 150ms ease-in-out;
+      }
+      .balance {
+        max-height: 0rem;
+        overflow: hidden;
+        padding: 0px;
+        transition: all 150ms ease-in-out;
+      }
+    }
+  }
+  .line {
+    flex-shrink: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #007cff;
+    position: absolute;
+    left: -7.5px;
+    top: 3.5px;
+    &.un_able_next {
+      background-color: #007bff5d;
+    }
+    .point {
+      position: absolute;
+      left: -4px;
+      top: 0.5px;
+      border-radius: 50%;
+      display: flex;
+      width: 10px;
+      height: 10px;
+      background: #007cff;
+      border: solid 2px #007cff;
+      &.select {
+        background-color: #007cff;
+      }
+    }
+  }
+  .challenge {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    .label {
+      color: #a0aec0;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+    .balance {
+      display: flex;
+      justify-content: space-between;
+      max-width: 650px;
+      width: 100%;
+      margin: auto;
+      span {
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      svg {
+        width: 32px;
+        height: 32px;
+        padding: 0rem;
+        cursor: pointer;
+      }
+    }
+    .range {
+      padding: 0px 5px;
+      max-width: 650px;
+      display: flex;
+      align-self: center;
+      width: 100%;
+      padding-bottom: 1.5rem;
+      span {
+        color: #a0aec0;
+        text-align: right;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

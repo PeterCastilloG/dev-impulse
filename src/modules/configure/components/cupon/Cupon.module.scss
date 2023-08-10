@@ -1,0 +1,45 @@
+.discount {
+  flex-grow: 1;
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  label {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+  }
+  div {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    input {
+      width: 100%;
+      border-radius: 15px;
+      outline: none;
+      padding-left: 15px;
+      border: 0.5px solid rgba(226, 232, 240, 0.3);
+      height: 40px;
+      background: #0f1535;
+      color: white;
+    }
+    span {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      svg {
+        color: #01B574;
+        padding: 7.5px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

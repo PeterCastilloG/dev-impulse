@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  img {
+    align-self: center;
+  }
+  .code {
+    align-self: center;
+    height: 55px;
+    max-width: 500px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    @media screen and (max-width: 800px) and (min-width: 500px){
+      max-width:  327px;
+    }
+  }
+}

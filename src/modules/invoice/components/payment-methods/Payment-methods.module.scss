@@ -1,0 +1,36 @@
+.paymentprocesors {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    .paymentcontent {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .currencie {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        .currencieimg {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          span {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+          }
+          img {
+            width: 40px;
+            height: 35px;
+            object-fit: contain;
+          }
+        }
+        .procesors {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+      }
+    }
+  }

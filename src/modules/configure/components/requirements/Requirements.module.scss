@@ -1,0 +1,34 @@
+.conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+  margin-bottom: 2rem; 
+  &.noable {
+    opacity: 0.25;
+  }
+  @media screen and (max-width: 750px) {
+    margin-top: 1rem;
+  }
+  @media screen and (max-height: 875px) {
+    margin-top: 1rem;
+  }
+  .condition {
+    display: flex;
+    gap: 0.3rem;
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0rem;
+      padding-left: 0rem;
+      gap: 0.3rem;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    input {
+      align-self: flex-start;
+      margin-top: 3px;
+    }
+  }
+}

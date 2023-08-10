@@ -1,0 +1,32 @@
+.frontId {
+  // display: grid;
+  // margin: 0 30px;
+  
+  .strong {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .divImage {
+    height: 170px;
+    width: 290px;
+    border-radius: 10px;
+    border: 2px dashed #464C66;
+    background: #0F1535;
+    color: white;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    .InitImg {
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.image{
+  width: 140px;
+  height: 90px;
+  margin: 10px 0;
+}
